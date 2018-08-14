@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <!-- add aframe library -->
+    <script src="js/aframe.min.js"></script>
+</head>
+
+<body>
+    <!-- begin scene -->
+    <a-assets>
+        <img id="boxTexture" src="assets/img/gypsum.jpg">
+        <img id="gndTexture" src="assets/img/grid.jpg">
+    </a-assets>
+    <a-scene background="color: pink">
+        <!-- add elements here -->
+        <a-box src=#boxTexture color="red" position="0 2 -3" rotation="45 45 45" scale="1 2 -3">
+            <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000" repeat="indefinite">
+            </a-animation>
+        </a-box>
+        <a-plane <a-plane src="#gndTexture" repeat="30 30" position="0 0 -4" scale="30 30 0.00001" rotation="-90 0 0" width="4" height="4"
+            color="#7BC8A4"></a-plane>
+
+    </a-scene>
+</body>
+
+</html>
